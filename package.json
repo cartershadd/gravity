@@ -1,6 +1,8 @@
 {
   "name": "canvas-template",
   "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/cartershadd/gravity.git",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
@@ -12,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "gsap": "^2.0.1"
   },
   "devDependencies": {
