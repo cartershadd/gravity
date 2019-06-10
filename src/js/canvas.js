@@ -54,12 +54,16 @@ function Ball(x, y, dx, dy, radius, color) {
     if (this.y + this.radius + this.dy > canvas.height) {
       this.dy = -this.dy * friction;
     } else {
+      // This line gives the balls gravity.
       this.dy += gravity;
     }
     if (this.x + this.radius + this.dx > canvas.width || this.x - this.radius <= 0) {
       this.dx = -this.dx;
     }
+    // This line makes the balls move along the x axis.
     this.x += this.dx;
+
+    // This line makes the balls move along the y axis.
     this.y += this.dy;
     this.draw();
   };
